@@ -89,9 +89,14 @@ It reflects my interests in:
 
 * Artificial Intelligence
 * Data Science
+* Machine Learning
+* AI + XR
+* Tech
 * UI/UX Design
 * Photography
 * Creative Technology
+* Spacce and Travel
+* Always ☕ Caffinated 
 
 ---
 
