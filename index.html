@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayila Surya Kiran — AI Builder & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- CUSTOM CAMERA CURSOR -->
+  <div id="cursor">
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Camera body -->
+      <rect x="4" y="11" width="28" height="20" rx="3" fill="#393831" opacity="0.9" />
+      <!-- Viewfinder bump -->
+      <path d="M13 11V8a1 1 0 011-1h8a1 1 0 011 1v3" fill="#393831" opacity="0.9" />
+      <!-- Lens ring outer -->
+      <circle cx="18" cy="21" r="7" fill="#F0EFE6" stroke="#393831" stroke-width="1.5" />
+      <!-- Lens ring inner -->
+      <circle cx="18" cy="21" r="4.5" fill="#EAEAEA" stroke="#B8AEA8" stroke-width="0.8" opacity="0.9" />
+      <!-- Lens center -->
+      <circle cx="18" cy="21" r="2" fill="#B8AEA8" opacity="0.7" />
+      <!-- Flash dot -->
+      <circle cx="8" cy="15" r="1.5" fill="#DCCFC1" opacity="0.8" />
+    </svg>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">SK.</a>
+    <ul class="nav-links">
+      <li><a href="#projects" class="active">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Reach Me</a></li>
+    </ul>
+    <div class="nav-level-badge" id="nav-level-badge" title="Barista Exp Lvl">Lvl 01: Novice</div>
+    <a href="Resume.pdf" target="_blank" class="nav-resume">Resume ↓</a>
+    <div class="nav-anchor-ring desktop-card"></div>
+    <div id="lanyard" class="id-card-strap desktop-card">
+      <div class="clip-hardware">
+        <div class="clip-d-ring"></div>
+        <div class="clip-swivel"></div>
+        <div class="clip-body"></div>
+        <div class="clip-hook"></div>
+      </div>
+    </div>
+    <!-- Level-style scroll progress coffee bean -->
+    <div class="nav-progress-container">
+      <div class="nav-progress-bar" id="nav-progress-bar"></div>
+      <div class="nav-progress-bean" id="nav-progress-bean">
+        <svg viewBox="0 0 36 36" class="bean-svg" xmlns="http://www.w3.org/2000/svg">
+          <path class="bean-body" d="M8,18 C8,9 13,5 18,5 C23,5 28,9 28,18 C28,27 23,31 18,31 C13,31 8,27 8,18 Z" />
+          <path class="bean-seam" d="M18,5 C20,10 16,15 18,18 C20,21 16,26 18,31" />
+        </svg>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Final Year · CSE Data Science · Visakhapatnam</div>
+      <h2 class="hero-headline">
+        I Build<br>
+        <em class="accent">Intelligent</em><br>
+        Systems &<br>
+        <em>Design</em><br>
+        Experiences
+      </h2>
+      <p class="hero-desc">
+        Final-year B.Tech student building AI systems, agentic tools, and human-centric applications.
+        Passionate about the intersection of <strong style="color:var(--accent-deep)">AI, XR, and design</strong> —
+        where technology meets lived experience.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="https://www.linkedin.com/in/surya-kiran-ayila-040d0b260/" target="_blank" class="btn-ghost">LinkedIn
+          →</a>
+        <a href="https://www.instagram.com/suryakiranayila/" target="_blank" class="btn-ghost">Instagram →</a>
+      </div>
+    </div>
+
+    <div class="hero-card mobile-card">
+      <div class="profile-img-wrap">
+        <img src="Profile.jpg" alt="Profile" />
+      </div>
+      <div class="card-name">AYILA SURYA KIRAN</div>
+      <div class="card-role">AI Builder · Designer · Photographer</div>
+      <span class="card-badge">Open to Opportunities</span>
+      <div class="card-divider"></div>
+      <div class="card-stats">
+        <div class="stat">
+          <span class="stat-val">7+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-val">SIH</span>
+          <span class="stat-label">2024 Finalist</span>
+        </div>
+        <div class="stat">
+          <span class="stat-val">AI</span>
+          <span class="stat-label">Focus Area</span>
+        </div>
+        <div class="stat">
+          <span class="stat-val">Apr</span>
+          <span class="stat-label">2026 Grad</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a href="https://www.linkedin.com/in/surya-kiran-ayila-040d0b260/" target="_blank"
+          class="card-link">LinkedIn</a>
+        <a href="#contact" class="card-link">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL TICKER -->
+  <div style="overflow:hidden;margin:0">
+    <div class="ticker-wrap">
+      <div class="ticker" id="ticker">
+        <div class="ticker-item"><span class="ticker-dot"></span>AI Systems</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Machine Learning</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Generative AI</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Agentic AI</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>XR & Extended Reality</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Computer Vision</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Python · SQL · .NET</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>UI/UX Design</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Visual Computing</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Photography</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>RAG Systems</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Data Visualization</div>
+        <!-- duplicate for seamless loop -->
+        <div class="ticker-item"><span class="ticker-dot"></span>AI Systems</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Machine Learning</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Generative AI</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Agentic AI</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>XR & Extended Reality</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Computer Vision</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Python · SQL · .NET</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>UI/UX Design</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Visual Computing</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Photography</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>RAG Systems</div>
+        <div class="ticker-item"><span class="ticker-dot"></span>Data Visualization</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-tag">Featured Projects</div>
+    <h2 class="section-title">Things I've<br><em
+        style="font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;font-size:0.9em;letter-spacing:0.01em">Been
+        Building</em></h2>
+
+    <div class="projects-grid">
+
+      <!-- 1: MessageFusion -->
+      <div class="project-card">
+        <div class="proj-visual">
+          <span class="proj-status-badge">In Progress</span>
+          <div class="proj-icon-area">
+            <div class="proj-big-icon">✉</div>
+            <div class="proj-num">01 / MessageFusion</div>
+          </div>
+          <svg class="proj-shutter" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#d4a03c" stroke-width="1" />
+            <circle cx="20" cy="20" r="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="2" x2="20" y2="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="30" x2="20" y2="38" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="2" y1="20" x2="10" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="30" y1="20" x2="38" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">LLM</span>
+              <span class="proj-tag">Agents</span>
+              <span class="proj-tag">Next.js</span>
+            </div>
+            <a href="#" class="proj-arrow">↗</a>
+          </div>
+          <div class="proj-title">MessageFusion — Unified Communication Intelligence</div>
+          <div class="proj-desc">AI-powered unified inbox merging Gmail + Discord. Smart categorization, thread
+            summaries, action suggestions, and cross-platform workflow linking via token IDs.</div>
+        </div>
+      </div>
+
+      <!-- 2: Know2Grow -->
+      <div class="project-card">
+        <div class="proj-visual">
+          <span class="proj-status-badge">In Progress</span>
+          <div class="proj-icon-area">
+            <div class="proj-big-icon">🧠</div>
+            <div class="proj-num">02 / Know2Grow</div>
+          </div>
+          <svg class="proj-shutter" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#d4a03c" stroke-width="1" />
+            <circle cx="20" cy="20" r="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="2" x2="20" y2="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="30" x2="20" y2="38" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="2" y1="20" x2="10" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="30" y1="20" x2="38" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">RAG</span>
+              <span class="proj-tag">Embeddings</span>
+              <span class="proj-tag">FastAPI</span>
+            </div>
+            <a href="#" class="proj-arrow">↗</a>
+          </div>
+          <div class="proj-title">Know2Grow — Personalized AI Learning System</div>
+          <div class="proj-desc">Converts scattered knowledge from YouTube, articles, and notes into a dynamic learning
+            graph. Tracks progress, detects gaps, and recommends next steps like a second brain.</div>
+        </div>
+      </div>
+
+      <!-- 3: Smart Visitor Parking -->
+      <div class="project-card">
+        <div class="proj-visual">
+          <span class="proj-status-badge">Built</span>
+          <div class="proj-icon-area">
+            <div class="proj-big-icon">🅿</div>
+            <div class="proj-num">03 / Smart Parking</div>
+          </div>
+          <svg class="proj-shutter" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#d4a03c" stroke-width="1" />
+            <circle cx="20" cy="20" r="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="2" x2="20" y2="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="30" x2="20" y2="38" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="2" y1="20" x2="10" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="30" y1="20" x2="38" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">OpenCV</span>
+              <span class="proj-tag">ANPR</span>
+              <span class="proj-tag">React</span>
+            </div>
+            <a href="#" class="proj-arrow">↗</a>
+          </div>
+          <div class="proj-title">Smart Visitor Parking System</div>
+          <div class="proj-desc">Computer vision–powered ANPR for automated entry/exit. Dynamic slot assignment,
+            real-time occupancy tracking, security workflow integration, and manual override flows.</div>
+        </div>
+      </div>
+
+      <!-- 4: Stock Forecast -->
+      <div class="project-card">
+        <div class="proj-visual">
+          <span class="proj-status-badge">In Progress</span>
+          <div class="proj-icon-area">
+            <div class="proj-big-icon">📈</div>
+            <div class="proj-num">04 / Stock Forecast</div>
+          </div>
+          <svg class="proj-shutter" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#d4a03c" stroke-width="1" />
+            <circle cx="20" cy="20" r="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="2" x2="20" y2="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="30" x2="20" y2="38" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="2" y1="20" x2="10" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="30" y1="20" x2="38" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">LSTM</span>
+              <span class="proj-tag">NLP</span>
+              <span class="proj-tag">Plotly</span>
+            </div>
+            <a href="#" class="proj-arrow">↗</a>
+          </div>
+          <div class="proj-title">Stock Forecast System</div>
+          <div class="proj-desc">AI-based stock analysis combining LSTM/ARIMA time-series models with transformer-based
+            news sentiment. Delivers trend insights and buy/sell signals on a Plotly/Dash dashboard.</div>
+        </div>
+      </div>
+
+      <!-- 5: Smart Expense Tracker -->
+      <div class="project-card">
+        <div class="proj-visual">
+          <span class="proj-status-badge">In Progress</span>
+          <div class="proj-icon-area">
+            <div class="proj-big-icon">💸</div>
+            <div class="proj-num">05 / Expense Tracker</div>
+          </div>
+          <svg class="proj-shutter" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#d4a03c" stroke-width="1" />
+            <circle cx="20" cy="20" r="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="2" x2="20" y2="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="30" x2="20" y2="38" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="2" y1="20" x2="10" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="30" y1="20" x2="38" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">ML</span>
+              <span class="proj-tag">LLM</span>
+              <span class="proj-tag">React Native</span>
+            </div>
+            <a href="#" class="proj-arrow">↗</a>
+          </div>
+          <div class="proj-title">Smart Expense Tracker</div>
+          <div class="proj-desc">AI-driven personal finance assistant with SMS parsing, auto-categorization, monthly
+            spending insights, future expense prediction, and anomaly detection alerts.</div>
+        </div>
+      </div>
+
+      <!-- 6: Cloud Startup Gap Explorer -->
+      <div class="project-card">
+        <div class="proj-visual">
+          <span class="proj-status-badge">In Progress</span>
+          <div class="proj-icon-area">
+            <div class="proj-big-icon">☁</div>
+            <div class="proj-num">06 / Startup Explorer</div>
+          </div>
+          <svg class="proj-shutter" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#d4a03c" stroke-width="1" />
+            <circle cx="20" cy="20" r="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="2" x2="20" y2="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="30" x2="20" y2="38" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="2" y1="20" x2="10" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="30" y1="20" x2="38" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="proj-tag">LLM</span>
+              <span class="proj-tag">Scraping</span>
+              <span class="proj-tag">Streamlit</span>
+            </div>
+            <a href="#" class="proj-arrow">↗</a>
+          </div>
+          <div class="proj-title">Cloud Startup Gap Explorer</div>
+          <div class="proj-desc">AI system scanning SaaS ecosystems to surface missing integrations, pricing
+            inefficiencies, and underserved niches — generating validated startup ideas with reasoned analysis.</div>
+        </div>
+      </div>
+
+      <!-- 7: AI Game Systems — WIDE -->
+      <div class="project-card wide">
+        <div class="proj-visual">
+          <span class="proj-status-badge">Exploring</span>
+          <div class="proj-icon-area">
+            <div class="proj-big-icon">🎮</div>
+            <div class="proj-num">07 / AI × Game Dev</div>
+          </div>
+          <svg class="proj-shutter" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#d4a03c" stroke-width="1" />
+            <circle cx="20" cy="20" r="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="2" x2="20" y2="10" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="20" y1="30" x2="20" y2="38" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="2" y1="20" x2="10" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+            <line x1="30" y1="20" x2="38" y2="20" stroke="#d4a03c" stroke-width="0.8" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title-wrap">
+            <div class="proj-meta">
+              <div class="proj-tags">
+                <span class="proj-tag">Unity</span>
+                <span class="proj-tag">PyTorch</span>
+                <span class="proj-tag">RL</span>
+                <span class="proj-tag">XR</span>
+              </div>
+              <a href="#" class="proj-arrow">↗</a>
+            </div>
+            <div class="proj-title">AI + Game Development Systems</div>
+            <div class="proj-desc">Intelligent game systems using AI agents and adaptive environments — AI-driven NPCs,
+              procedural world generation, and simulation using Reinforcement Learning. A space where AI meets XR and
+              interactive experience design.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COFFEE LAB MINI-GAME -->
+  <section class="section" id="coffee-game" style="border-top:1px solid var(--border)">
+    <div class="section-tag">Interactive Experience</div>
+    <h2 class="section-title">Surya's<br><em style="font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;font-size:0.9em;letter-spacing:0.01em">Coffee Lab</em></h2>
+    <p class="section-intro" style="font-size:15px;color:var(--muted2);max-width:550px;line-height:1.7;margin-top:12px;margin-bottom:32px;">
+      Need a break? Brew the perfect recipe for our visitors. Match the order card on the right, pour the ingredients, and serve it up to raise your Barista Level!
+    </p>
+
+    <div class="coffee-game-grid">
+      <!-- Left Column: Mug Visuals -->
+      <div class="coffee-visual-area">
+        <!-- Canvas for particle confetti -->
+        <canvas id="confetti-canvas" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:10;"></canvas>
+        <!-- Floating Steam Particles -->
+        <div class="steam-container">
+          <span class="steam-particle"></span>
+          <span class="steam-particle"></span>
+          <span class="steam-particle"></span>
+        </div>
+        
+        <!-- Pouring Liquid Stream Animation -->
+        <div class="pour-stream" id="pour-stream"></div>
+        
+        <!-- Live Recipe Identifier Badge -->
+        <div class="current-brew-badge" id="current-brew-badge">Empty Cup</div>
+        
+        <!-- The Mug -->
+        <div class="coffee-mug-container">
+          <div class="mug-handle"></div>
+          <div class="mug-glass">
+            <!-- Liquid stacking layers -->
+            <div class="mug-liquid-container" id="mug-liquid-container">
+              <!-- Empty state message -->
+              <div class="empty-mug-text" id="empty-mug-text">Empty Mug</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mug coaster/base -->
+        <div class="mug-coaster"></div>
+        
+        <!-- Current Pour Status -->
+        <div class="pour-status" id="pour-status">Choose an ingredient to begin...</div>
+      </div>
+
+      <!-- Right Column: Console / Gameplay -->
+      <div class="coffee-console-area">
+        <!-- Order Ticket Panel -->
+        <div class="order-ticket" id="order-ticket">
+          <div class="ticket-header">
+            <span class="ticket-id">TICKET #001</span>
+            <span class="ticket-status">ACTIVE ORDER</span>
+          </div>
+          <div class="ticket-content">
+            <div class="ticket-customer" id="ticket-customer">GitHub Copilot</div>
+            <div class="ticket-phrase" id="ticket-phrase">"My server is running hot, I need an icy shot of espresso to cool down my neural weights!"</div>
+            <div class="ticket-recipe-hint">
+              <strong>Target:</strong> <span id="ticket-target-name">Iced Espresso</span><br>
+              <span class="recipe-formula" id="recipe-formula">Espresso Shot + Ice Cubes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="console-controls">
+          <div class="console-label">Pour Liquids</div>
+          <div class="ingredients-row">
+            <button class="btn-ingredient" data-ingredient="espresso" style="background:#4A2C2A; color:#FFF;">+ Espresso</button>
+            <button class="btn-ingredient" data-ingredient="milk" style="background:#F4EBE1; color:#393831;">+ Steamed Milk</button>
+            <button class="btn-ingredient" data-ingredient="foam" style="background:#FFF8F0; color:#393831;">+ Frothed Foam</button>
+          </div>
+
+          <div class="console-label" style="margin-top:16px;">Add Toppings & Add-ins</div>
+          <div class="ingredients-row">
+            <button class="btn-ingredient" data-ingredient="caramel" style="background:#D4A03C; color:#FFF;">+ Caramel</button>
+            <button class="btn-ingredient" data-ingredient="vanilla" style="background:#F2DCA2; color:#393831;">+ Vanilla</button>
+            <button class="btn-ingredient" data-ingredient="ice" style="background:#D4E8FC; color:#393831;">+ Ice Cubes</button>
+            <button class="btn-ingredient" data-ingredient="cinnamon" style="background:#8b5a2b; color:#FFF;">+ Cinnamon</button>
+            <button class="btn-ingredient" data-ingredient="cream" style="background:#FFFDF9; color:#393831; border: 1px solid var(--border2);">+ Whipped Cream</button>
+            <button class="btn-ingredient" data-ingredient="chili" style="background:#FF2400; color:#FFF;">+ Ghost Pepper 🌶️</button>
+          </div>
+
+          <div class="actions-row">
+            <button class="btn-barista reset" id="btn-reset">Reset Mug</button>
+            <button class="btn-barista serve" id="btn-serve">Serve Order ☕</button>
+          </div>
+        </div>
+
+        <!-- Score & Stats -->
+        <div class="barista-scoreboard">
+          <div class="score-card">
+            <span class="score-label">Served</span>
+            <span class="score-val" id="brews-served-count">0</span>
+          </div>
+          <div class="score-card">
+            <span class="score-label">Barista Title</span>
+            <span class="score-val" id="barista-title-name">Novice</span>
+          </div>
+          <div class="score-card">
+            <span class="score-label">Experience</span>
+            <span class="score-val" id="barista-xp-percent">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="skills-inner">
+      <div class="section-tag">Technical Skills</div>
+      <h2 class="section-title">What I Work<br><em
+          style="font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0.01em">With</em>
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skill-items">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">.NET / C#</span>
+            <span class="skill-pill">JavaScript (Basics)</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">AI & ML</div>
+          <div class="skill-items">
+            <span class="skill-pill">Scikit-learn</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">NLP Pipelines</span>
+            <span class="skill-pill learning">GenAI ↗ Learning</span>
+            <span class="skill-pill learning">Agentic AI ↗ Learning</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Data & Viz</div>
+          <div class="skill-items">
+            <span class="skill-pill">Tableau</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">Streamlit</span>
+            <span class="skill-pill">Plotly</span>
+            <span class="skill-pill">Looker Studio</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Backend & Infra</div>
+          <div class="skill-items">
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Supabase</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Design & Creative</div>
+          <div class="skill-items">
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Adobe Photoshop</span>
+            <span class="skill-pill">Canva</span>
+            <span class="skill-pill">UI/UX</span>
+            <span class="skill-pill">Photography</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Exploring</div>
+          <div class="skill-items">
+            <span class="skill-pill learning">XR / AR / VR ↗</span>
+            <span class="skill-pill learning">Visual Computing ↗</span>
+            <span class="skill-pill learning">Unity ↗</span>
+            <span class="skill-pill learning">Advanced ML ↗</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">More Than<br><em
+        style="font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0.01em">Just
+        Code</em></h2>
+    <div class="about-grid">
+      <div>
+        <div class="about-text">
+          <p>I'm <strong>Ayila Surya Kiran</strong> — a final-year Computer Science Engineering student (Data Science)
+            at Visakhapatnam, graduating April 2026. I build things at the intersection of <strong>AI, design, and human
+              experience</strong>.</p>
+          <p>My work spans intelligent systems, agentic AI tools, computer vision, and data-driven applications. But I'm
+            equally drawn to the <strong>design side</strong> — how interfaces feel, how visuals communicate, and how
+            technology shapes the way people see the world.</p>
+          <p>I believe the most interesting problems live at the edges — where <strong>AI meets XR</strong>, where data
+            meets design, where engineering meets art. That's where I want to build.</p>
+        </div>
+      </div>
+      <div>
+        <div class="interests-grid">
+          <div class="interest-item">
+            <span class="interest-icon">🤖</span> AI & Intelligent Systems
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon">🥽</span> XR / AR / VR Technology
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon">📷</span> Photography
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon">🎨</span> Design & Visual Arts
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon">🚀</span> Space & Astronomy
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon">🌍</span> Travel & Exploration
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS & EDUCATION -->
+  <div id="journey" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <section class="section">
+      <div class="section-tag">Achievements & Education</div>
+      <h2 class="section-title">The<br><em
+          style="font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0.01em">Journey</em>
+      </h2>
+
+      <div class="achievements-grid" style="margin-top:48px">
+        <div class="achievement-card">
+          <div class="achievement-label">Competition · 2024</div>
+          <div class="achievement-title">Smart India Hackathon — Finalist</div>
+          <div class="achievement-desc">Selected as a national finalist at SIH 2024, one of India's largest hackathons.
+            Demonstrated problem-solving and product-thinking under real constraints.</div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-label">Certification · Wipro</div>
+          <div class="achievement-title">.NET Development — Wipro CareerReady / TalentNext</div>
+          <div class="achievement-desc">Completed a professional .NET course under Wipro's CareerReady program via
+            TalentNext, adding enterprise-grade development skills to the stack.</div>
+        </div>
+      </div>
+
+      <!-- Education timeline -->
+      <div class="edu-item">
+        <div class="edu-year">2022 – 2026</div>
+        <div class="edu-dot"></div>
+        <div class="edu-body">
+          <div class="edu-title">B.Tech — Computer Science Engineering (Data Science)</div>
+          <div class="edu-sub">MVGR College Of Engineering, Vizianagaram · Andhra Pradesh, India · CGPA: 7.14</div>
+          <div class="edu-desc">Specialization in Data Science with coursework in ML, AI, databases, and software
+            engineering. Final year with active project portfolio and grad school preparation underway.</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">Ongoing</div>
+        <div class="edu-dot" style="background:var(--accent-border);box-shadow:none"></div>
+        <div class="edu-body">
+          <div class="edu-title">Self-Directed Learning — GenAI, Agentic AI & XR</div>
+          <div class="edu-sub">Independent · Building Towards MSc Applications</div>
+          <div class="edu-desc">Actively deepening knowledge in Generative AI, AI Agents, and Extended Reality through
+            hands-on project work — targeting MSc programs in AI &amp; Visual Computing in Germany and Canada.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-tag" style="justify-content:center">Let's Connect</div>
+    <div class="contact-big">
+      Available for<br>
+      <span class="italic">opportunities</span>
+    </div>
+    <p style="font-size:15px;color:var(--muted2);max-width:480px;margin:0 auto 36px;line-height:1.8">
+      Open to internships, freelance design work, collaborations, and grad school conversations.
+      If you're building something interesting — let's talk.
+    </p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/surya-kiran-ayila-040d0b260/" target="_blank"
+        class="contact-link primary">Connect on LinkedIn ↗</a>
+      <a href="mailto:suryakiran@example.com" class="contact-link ghost">Send an Email</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div style="border-top:1px solid var(--border)">
+    <footer>
+      <div class="footer-copy">© 2026 Ayila Surya Kiran</div>
+      <div class="footer-right">Visakhapatnam, India ✦ Open to Work</div>
+    </footer>
+  </div>
+
+  <!-- THEME TOGGLE -->
+  <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+
+  <div class="id-card-wrapper desktop-card">
+    <div class="hero-card">
+      <div class="card-hole"></div>
+      <div class="profile-img-wrap">
+        <img src="Profile.jpg" alt="Profile" />
+      </div>
+      <div class="card-name">AYILA SURYA KIRAN</div>
+      <div class="card-role">AI Builder · Designer · Photographer</div>
+      <span class="card-badge">Open to Opportunities</span>
+      <div class="card-divider"></div>
+      <div class="card-stats">
+        <div class="stat"><span class="stat-val">7+</span><span class="stat-label">Projects</span></div>
+        <div class="stat"><span class="stat-val">SIH</span><span class="stat-label">2024 Finalist</span></div>
+        <div class="stat"><span class="stat-val">AI</span><span class="stat-label">Focus Area</span></div>
+        <div class="stat"><span class="stat-val">Apr</span><span class="stat-label">2026 Grad</span></div>
+      </div>
+      <div class="card-links">
+        <a href="https://www.linkedin.com/in/surya-kiran-ayila-040d0b260/" target="_blank" class="card-link">LinkedIn</a>
+        <a href="#contact" class="card-link">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
