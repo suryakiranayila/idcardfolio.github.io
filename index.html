@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,9 +10,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
   <!-- CUSTOM CAMERA CURSOR -->
   <div id="cursor">
     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,15 +28,16 @@
       <circle cx="8" cy="15" r="1.5" fill="#DCCFC1" opacity="0.8" />
     </svg>
   </div>
-
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">SK.</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Reach Me</a></li>
+    <ul class="nav-links">    
+<ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects" class="active">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Reach Me</a></li>
+</ul>
     </ul>
     <div class="nav-level-badge" id="nav-level-badge" title="Barista Exp Lvl">Lvl 01: Novice</div>
     <a href="Resume.pdf" target="_blank" class="nav-resume">Resume ↓</a>
@@ -63,7 +61,6 @@
       </div>
     </div>
   </nav>
-
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-left">
@@ -87,7 +84,6 @@
         <a href="https://www.instagram.com/suryakiranayila/" target="_blank" class="btn-ghost">Instagram →</a>
       </div>
     </div>
-
     <div class="hero-card mobile-card">
       <div class="profile-img-wrap">
         <img src="Profile.jpg" alt="Profile" />
@@ -121,7 +117,6 @@
       </div>
     </div>
   </section>
-
   <!-- SKILL TICKER -->
   <div style="overflow:hidden;margin:0">
     <div class="ticker-wrap">
@@ -154,16 +149,13 @@
       </div>
     </div>
   </div>
-
   <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="section-tag">Featured Projects</div>
     <h2 class="section-title">Things I've<br><em
         style="font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;font-size:0.9em;letter-spacing:0.01em">Been
         Building</em></h2>
-
     <div class="projects-grid">
-
       <!-- 1: MessageFusion -->
       <div class="project-card">
         <div class="proj-visual">
@@ -195,7 +187,6 @@
             summaries, action suggestions, and cross-platform workflow linking via token IDs.</div>
         </div>
       </div>
-
       <!-- 2: Know2Grow -->
       <div class="project-card">
         <div class="proj-visual">
@@ -227,7 +218,6 @@
             graph. Tracks progress, detects gaps, and recommends next steps like a second brain.</div>
         </div>
       </div>
-
       <!-- 3: Smart Visitor Parking -->
       <div class="project-card">
         <div class="proj-visual">
@@ -259,7 +249,6 @@
             real-time occupancy tracking, security workflow integration, and manual override flows.</div>
         </div>
       </div>
-
       <!-- 4: Stock Forecast -->
       <div class="project-card">
         <div class="proj-visual">
@@ -291,7 +280,6 @@
             news sentiment. Delivers trend insights and buy/sell signals on a Plotly/Dash dashboard.</div>
         </div>
       </div>
-
       <!-- 5: Smart Expense Tracker -->
       <div class="project-card">
         <div class="proj-visual">
@@ -323,7 +311,6 @@
             spending insights, future expense prediction, and anomaly detection alerts.</div>
         </div>
       </div>
-
       <!-- 6: Cloud Startup Gap Explorer -->
       <div class="project-card">
         <div class="proj-visual">
@@ -355,7 +342,6 @@
             inefficiencies, and underserved niches — generating validated startup ideas with reasoned analysis.</div>
         </div>
       </div>
-
       <!-- 7: AI Game Systems — WIDE -->
       <div class="project-card wide">
         <div class="proj-visual">
@@ -391,10 +377,8 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
-
   <!-- COFFEE LAB MINI-GAME -->
   <section class="section" id="coffee-game" style="border-top:1px solid var(--border)">
     <div class="section-tag">Interactive Experience</div>
@@ -402,7 +386,6 @@
     <p class="section-intro" style="font-size:15px;color:var(--muted2);max-width:550px;line-height:1.7;margin-top:12px;margin-bottom:32px;">
       Need a break? Brew the perfect recipe for our visitors. Match the order card on the right, pour the ingredients, and serve it up to raise your Barista Level!
     </p>
-
     <div class="coffee-game-grid">
       <!-- Left Column: Mug Visuals -->
       <div class="coffee-visual-area">
@@ -414,13 +397,10 @@
           <span class="steam-particle"></span>
           <span class="steam-particle"></span>
         </div>
-        
         <!-- Pouring Liquid Stream Animation -->
         <div class="pour-stream" id="pour-stream"></div>
-        
         <!-- Live Recipe Identifier Badge -->
         <div class="current-brew-badge" id="current-brew-badge">Empty Cup</div>
-        
         <!-- The Mug -->
         <div class="coffee-mug-container">
           <div class="mug-handle"></div>
@@ -432,14 +412,11 @@
             </div>
           </div>
         </div>
-        
         <!-- Mug coaster/base -->
         <div class="mug-coaster"></div>
-        
         <!-- Current Pour Status -->
         <div class="pour-status" id="pour-status">Choose an ingredient to begin...</div>
       </div>
-
       <!-- Right Column: Console / Gameplay -->
       <div class="coffee-console-area">
         <!-- Order Ticket Panel -->
@@ -457,7 +434,6 @@
             </div>
           </div>
         </div>
-
         <!-- Controls -->
         <div class="console-controls">
           <div class="console-label">Pour Liquids</div>
@@ -466,7 +442,6 @@
             <button class="btn-ingredient" data-ingredient="milk" style="background:#F4EBE1; color:#393831;">+ Steamed Milk</button>
             <button class="btn-ingredient" data-ingredient="foam" style="background:#FFF8F0; color:#393831;">+ Frothed Foam</button>
           </div>
-
           <div class="console-label" style="margin-top:16px;">Add Toppings & Add-ins</div>
           <div class="ingredients-row">
             <button class="btn-ingredient" data-ingredient="caramel" style="background:#D4A03C; color:#FFF;">+ Caramel</button>
@@ -476,13 +451,11 @@
             <button class="btn-ingredient" data-ingredient="cream" style="background:#FFFDF9; color:#393831; border: 1px solid var(--border2);">+ Whipped Cream</button>
             <button class="btn-ingredient" data-ingredient="chili" style="background:#FF2400; color:#FFF;">+ Ghost Pepper 🌶️</button>
           </div>
-
           <div class="actions-row">
             <button class="btn-barista reset" id="btn-reset">Reset Mug</button>
             <button class="btn-barista serve" id="btn-serve">Serve Order ☕</button>
           </div>
         </div>
-
         <!-- Score & Stats -->
         <div class="barista-scoreboard">
           <div class="score-card">
@@ -501,7 +474,6 @@
       </div>
     </div>
   </section>
-
   <!-- SKILLS -->
   <section class="skills-section" id="skills">
     <div class="skills-inner">
@@ -571,7 +543,6 @@
       </div>
     </div>
   </section>
-
   <!-- ABOUT -->
   <section class="section" id="about">
     <div class="section-tag">About Me</div>
@@ -616,7 +587,6 @@
       </div>
     </div>
   </section>
-
   <!-- ACHIEVEMENTS & EDUCATION -->
   <div id="journey" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
     <section class="section">
@@ -624,7 +594,6 @@
       <h2 class="section-title">The<br><em
           style="font-family:var(--serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0.01em">Journey</em>
       </h2>
-
       <div class="achievements-grid" style="margin-top:48px">
         <div class="achievement-card">
           <div class="achievement-label">Competition · 2024</div>
@@ -639,7 +608,6 @@
             TalentNext, adding enterprise-grade development skills to the stack.</div>
         </div>
       </div>
-
       <!-- Education timeline -->
       <div class="edu-item">
         <div class="edu-year">2022 – 2026</div>
@@ -671,7 +639,6 @@
       </div>
     </section>
   </div>
-
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
     <div class="section-tag" style="justify-content:center">Let's Connect</div>
@@ -689,7 +656,6 @@
       <a href="mailto:suryakiran@example.com" class="contact-link ghost">Send an Email</a>
     </div>
   </section>
-
   <!-- FOOTER -->
   <div style="border-top:1px solid var(--border)">
     <footer>
@@ -697,10 +663,8 @@
       <div class="footer-right">Visakhapatnam, India ✦ Open to Work</div>
     </footer>
   </div>
-
   <!-- THEME TOGGLE -->
   <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
-
   <div class="id-card-wrapper desktop-card">
     <div class="hero-card">
       <div class="card-hole"></div>
@@ -723,7 +687,6 @@
       </div>
     </div>
   </div>
-
   <script src="main.js"></script>
 </body>
 </html>
